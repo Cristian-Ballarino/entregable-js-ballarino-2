@@ -63,6 +63,8 @@ comprar.addEventListener("click", () => {
 });
 
 verCarrito.addEventListener("click", () => {
+    modalContainer.innerHTML = ""
+    modalContainer.style.display = "flex";
     const modalHeader = document.createElement("div");
     modalHeader.className = "modal-header";
     modalHeader.innerHTML = `
@@ -84,7 +86,7 @@ verCarrito.addEventListener("click", () => {
     let carritoContent = document.createElement("div");
     carritoContent.className = "modal-content";
     carritoContent.innerHTML = `
-    img src="${product.img}">
+    <img src="${product.img}">
     <h3>${product.nombre}</h3>
     <p>${product.precio}$</p>
 `;
