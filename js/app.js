@@ -104,4 +104,3 @@ modalContainer.append(totalBuying);
 
 });
 
-//``
