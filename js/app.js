@@ -44,7 +44,7 @@ productos.forEach((product)=> {
 
 shopContent.append(content);
 
-let comprar = document.createElement("buttom");
+let comprar = document.createElement("button");
 comprar.innerText = "comprar";
 comprar.className = "comprar";
 
@@ -53,7 +53,8 @@ content.append(comprar);
 comprar.addEventListener("click", () => {
     carrito.push({
         id: product.id,
-        img: product.nombre,
+        img: product.img,
+        nombre: product.nombre,
         precio: product.precio,
     });
    /* console.log(carrito);*/
@@ -97,7 +98,7 @@ modalContainer.append(carritoContent);
 const total = carrito.reduce((acc, el) => acc + el.precio, 0);
 
 const totalBuying = document.createElement("div");
-totalBuying.className = "total.content";
+totalBuying.className = "total-content";
 totalBuying.innerHTML = `total a pagar: ${total} $`;
 modalContainer.append(totalBuying);
 
