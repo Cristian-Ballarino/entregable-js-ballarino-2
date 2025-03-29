@@ -158,3 +158,8 @@ cursor: pointer;
    padding-top: 20px; 
 }
 /*revisar estilo del modal(centrar modal)*/
+
+/*delete button product*/
+.delete-product{
+    cursor: pointer;
+}

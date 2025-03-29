@@ -27,3 +27,4 @@ const productos = [
         img: "imagenes/Skate semi profissional e iniciante hypeboards homem aranha até 100kg.jpg",
     },
 ];
+
