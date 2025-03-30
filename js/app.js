@@ -60,6 +60,7 @@ comprar.addEventListener("click", () => {
         img: product.img,
         nombre: product.nombre,
         precio: product.precio,
+        cantidad: product.cantidad,
     });
    /* console.log(carrito);*/
 });

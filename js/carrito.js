@@ -26,6 +26,7 @@
     <img src="${product.img}">
     <h3>${product.nombre}</h3>
     <p>${product.precio}$</p>
+    <p>Cantidad: ${product.cantidad}</p>
 `;
 
 modalContainer.append(carritoContent);
