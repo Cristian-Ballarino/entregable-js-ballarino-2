@@ -44,11 +44,26 @@ comprar.addEventListener("click", () => {
         precio: product.precio,
         cantidad: product.cantidad,
       });
-    }
+    
    /* console.log(carrito);*/
+   /* console.log(carrito.length);*/
    carritoCounter();
+   saveLocal();
+  }
   });
 });
+
+// set item
+const saveLocal = () => {
+localStorage.setItem("carrito", JSON.stringify(carrito));
+};
+
+//get item
+
+JSON.parse;(localStorage.getItem("carrito"));
+
+
+
 
 
 
