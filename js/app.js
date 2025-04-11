@@ -1,6 +1,6 @@
 //eliminar prodctos OK
 //manejar cantidades OK
-//agregar un contador dee productos en el navbar
+//agregar un contador dee productos en el navbar OK
 
 const shopContent = document.getElementById("shopContent"); 
 const verCarrito = document.getElementById("verCarrito");
@@ -8,7 +8,8 @@ const modalContainer = document.getElementById("modal-container");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem
+  ("carrito")) || [];
 
 productos.forEach((product)=> {
     let content = document.createElement("div");
@@ -60,7 +61,7 @@ localStorage.setItem("carrito", JSON.stringify(carrito));
 
 //get item
 
-JSON.parse;(localStorage.getItem("carrito"));
+//JSON.parse(localStorage.getItem("carrito"));
 
 
 
