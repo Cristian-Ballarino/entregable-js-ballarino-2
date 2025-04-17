@@ -67,8 +67,8 @@ cursor: pointer;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 30px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -76,6 +76,7 @@ cursor: pointer;
     margin: auto;
     text-align: center;
     font-family: Arial;
+    margin: 10px;
 }
 
 .card > img {
@@ -158,6 +159,27 @@ cursor: pointer;
    padding-top: 20px; 
 }
 /*revisar estilo del modal(centrar modal)*/
+
+/*se agregaron unas lineas de css con media querys para que se adapte mejor al responsive :)*/
+
+@media only screen and (max-width: 750px) {
+    .modal-container {
+      width: 100%;
+      margin: 0;
+      min-height: 88vh;
+    }
+  
+    .modal-container > .modal-content {
+      justify-content: space-between;
+      width: 100%;
+      margin: 2px;
+    }
+  
+    .modal-container > div > img {
+      height: 80px;
+      width: 80px;
+    }
+  }
 
 /*delete button product*/
 .delete-product{
