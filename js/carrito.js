@@ -1,11 +1,11 @@
 //verCarrito.addEventListener("click", () => {
-    const pintarCarrito = () =>{
+    const pintarCarrito = () => {
     modalContainer.innerHTML = ""
     modalContainer.style.display = "flex";
     const modalHeader = document.createElement("div");
     modalHeader.className = "modal-header";
     modalHeader.innerHTML = `
-    <h1 class="modal-header-title">carrito.</h1>`;
+        <h1 class="modal-header-title">carrito.</h1>`;
    /* console.log("funciona");*/
    modalContainer.append(modalHeader);
 
@@ -55,7 +55,7 @@ sumar.addEventListener("click", () => {
 
 let eliminar = carritoContent.querySelector(".delete-product");
 
-eliminar.addEventListener("click", () =>{
+eliminar.addEventListener("click", () => {
     eliminarProducto(product.id);
 
 });
@@ -76,7 +76,7 @@ verCarrito.addEventListener("click", pintarCarrito);
 const eliminarProducto = (id) => {
     const foundId = carrito.find((element) => element.id === id);
 
-    carrito = carrito.filter((carritoId) => {
+    carrito = carrito.filter((carritoId) =>{
         return carritoId !== foundId;
     });
     carritoCounter();
